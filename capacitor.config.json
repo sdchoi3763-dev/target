@@ -1,0 +1,17 @@
+{
+  "appId": "kr.targetlab.app",
+  "appName": "TARGET LAB",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "adjustMarginsForEdgeToEdge": "force"
+  },
+  "ios": {
+    "contentInset": "always",
+    "limitsNavigationsToAppBoundDomains": false
+  },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 800, "backgroundColor": "#1f4e79", "showSpinner": false },
+    "StatusBar": { "style": "DARK", "backgroundColor": "#1f4e79", "overlaysWebView": false }
+  }
+}

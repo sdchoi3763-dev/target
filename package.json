@@ -1,0 +1,27 @@
+{
+  "name": "targetlab-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TARGET LAB 정보통신설비 유지보수·성능점검 모바일 앱 (Android / iOS)",
+  "scripts": {
+    "android:init": "npx cap add android && node scripts/native-setup.js android && npx capacitor-assets generate --android && npx cap sync android",
+    "ios:init": "npx cap add ios && node scripts/native-setup.js ios && npx capacitor-assets generate --ios && npx cap sync ios",
+    "sync": "npx cap sync",
+    "android:open": "npx cap open android",
+    "ios:open": "npx cap open ios",
+    "android:apk": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}
